@@ -1,0 +1,9 @@
+SET GLOBAL local_infile = 1;
+USE chile;
+LOAD DATA LOCAL INFILE "D:\\Basededatos\\Limpioparaunir\\chile volanteomaleta.csv" INTO TABLE chile.volanteomaleta
+FIELDS TERMINATED BY ","
+ENCLOSED BY '"'
+LINES TERMINATED BY "\n"
+IGNORE 1 LINES
+(`PATENTE`, `SEGMENTO.1`, `MODELO`, `VERSION (SALES DESCRIPTION)`, `DATOS PERSONALES`, `NUMERO MOTOR`, `AÑO`, `NUMERO CHASIS / VIN`)
+SET `NUMERO CHASIS / VIN` = nullif(`NUMERO CHASIS / VIN`,'');

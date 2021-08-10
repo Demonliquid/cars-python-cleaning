@@ -1,0 +1,4 @@
+SELECT `SEGMENTO.1`, COUNT(`SEGMENTO.1`)
+FROM costarica.flotacostarica
+GROUP BY `SEGMENTO.1`
+;

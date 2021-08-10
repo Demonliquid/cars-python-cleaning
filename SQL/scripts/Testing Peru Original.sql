@@ -1,0 +1,11 @@
+SELECT `MERCADO`, `MARCA`, `MODELO`, `VERSION`, sum(`CANTIDAD`) as CANTIDAD
+FROM peruoriginal.peruoriginal
+GROUP BY `MERCADO`, `MARCA`, `MODELO`, `VERSION`
+ORDER BY CANTIDAD desc
+
+INTO OUTFILE 'D:/Escritorio/aSd/modelosperu.csv' 
+FIELDS ENCLOSED BY '"' 
+TERMINATED BY ';' 
+ESCAPED BY '"' 
+LINES TERMINATED BY '\r\n'
+;

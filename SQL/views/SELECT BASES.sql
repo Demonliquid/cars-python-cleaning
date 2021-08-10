@@ -1,0 +1,10 @@
+CREATE VIEW `new_view` AS
+SELECT `MERCADO`, `SEGMENTO.1`, `MARCA`,`MODELO`, `AÑO`, `MOTOR`, `CILINDRADA`, `FLOTA 2019` from chile.flotachile
+UNION ALL SELECT  `MERCADO`, `SEGMENTO.1`, `MARCA`,`MODELO`, `AÑO`, `MOTOR`, `CILINDRADA`, `FLOTA 2019` from costarica.flotacostarica
+UNION ALL SELECT  `MERCADO`, `SEGMENTO.1`, `MARCA`,`MODELO`, `AÑO`, `MOTOR`, `CILINDRADA`, `FLOTA 2019` from ecuador.flotaecuador
+UNION ALL SELECT  `MERCADO`, `SEGMENTO.1`, `MARCA`,`MODELO`, `AÑO`, `MOTOR`, `CILINDRADA`, `FLOTA 2019` from elsalvador.flotaelsalvador
+UNION ALL SELECT  `MERCADO`, `SEGMENTO.1`, `MARCA`,`MODELO`, `AÑO`, `MOTOR`, `CILINDRADA`, `FLOTA 2019` from guatemala.flotaguatemala
+UNION ALL SELECT  `MERCADO`, `SEGMENTO.1`, `MARCA`,`MODELO`, `AÑO`, `MOTOR`, `CILINDRADA`, `FLOTA 2019` from honduras.flotahonduras
+UNION ALL SELECT  `MERCADO`, `SEGMENTO.1`, `MARCA`,`MODELO`, `AÑO`, `MOTOR`, `CILINDRADA`, `FLOTA 2019` from panama.panamaconcesionaria
+UNION ALL SELECT  `MERCADO`, `SEGMENTO.1`, `MARCA`,`MODELO`, `AÑO`, `MOTOR`, `CILINDRADA`, `FLOTA 2019` from paraguay.flotaparaguay
+;
